@@ -1,5 +1,55 @@
-INSERT INTO animals (name) VALUES ('Agumon'), ('Gabumon'), ('Pikachu'), ('Devimon'), ('Charmander'), ('Plantmon'), ('Squirtle'), ('Angemon'), ('Boarmon'), ('Blossom');
+INSERT INTO animals(
+  name,
+  date_of_birth,
+  escape_attempts,
+  neutered,
+  weight_kg
+) VALUES(
+  'Agumon',
+  '2020-02-03',
+  0,
+  '1',
+  10.23
+);
 
-INSERT INTO vets (name) VALUES ('William Tatcher'), ('Maisy Smith'), ('Stephanie Mendez'), ('Jack Harkness');
+INSERT INTO animals(
+  name,
+  date_of_birth,
+  escape_attempts,
+  neutered,
+  weight_kg
+) VALUES(
+  'Gabumon',
+  '2018-11-15',
+  2,
+  '1',
+  8.0
+);
 
-INSERT INTO visits (animal_id, vet_id, date_of_visit) SELECT * FROM (SELECT id FROM animals) animal_ids, (SELECT id FROM vets) vets_ids, generate_series('1980-01-01'::timestamp, '2021-01-01', '4 hours') visit_timestamp;
+INSERT INTO animals(
+  name,
+  date_of_birth,
+  escape_attempts,
+  neutered,
+  weight_kg
+) VALUES(
+  'Pikachu',
+  '2021-01-07',
+  1,
+  '0',
+  15.04
+);
+
+INSERT INTO animals(
+  name,
+  date_of_birth,
+  escape_attempts,
+  neutered,
+  weight_kg
+) VALUES(
+  'Devinom',
+  '2017-05-05',
+  1,
+  '5',
+  11.0
+);
