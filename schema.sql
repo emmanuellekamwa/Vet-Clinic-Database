@@ -3,6 +3,7 @@ CREATE TABLE owners(
   full_name VARCHAR(20),
   age INT,
   PRIMARY KEY(id)
+  ALTER TABLE owners ADD COLUMN email VARCHAR(120);
 );
 
 CREATE TABLE species(
